@@ -1,6 +1,7 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "components/like/like"
   ],
   "window": {
     "navigationBarTextStyle": "black",
