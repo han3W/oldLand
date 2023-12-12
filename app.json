@@ -1,23 +1,42 @@
 {
   "pages": [
-    "pages/index/index",
-    "components/like/like"
+    "pages/classic/classic",
+    "components/like/like",
+    "pages/book/book",
+    "pages/my/my"
   ],
   "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "OldLand",
     "navigationBarTextStyle": "black",
-    "navigationStyle": "custom"
+    "navigationStyle": "default"
   },
-  "style": "v2",
-  "renderer": "skyline",
-  "rendererOptions": {
-    "skyline": {
-      "defaultDisplayBlock": true,
-      "disableABTest": true,
-      "sdkVersionBegin": "3.0.0",
-      "sdkVersionEnd": "15.255.255"
-    }
-  },
-  "componentFramework": "glass-easel",
-  "sitemapLocation": "sitemap.json",
-  "lazyCodeLoading": "requiredComponents"
+  "tabBar": {
+    "borderStyle": "black",
+    "selectedColor": "#000000",
+    "backgroundColor": "#ffffff",
+    "color": "#c7c7c7",
+    "list": [
+      {
+        "pagePath": "pages/classic/classic",
+        "selectedIconPath": "/images/tab/classic@highlight.png",
+        "iconPath": "/images/tab/classic.png",
+        "text": "流行"
+      },
+      {
+        "pagePath": "pages/book/book",
+        "selectedIconPath": "/images/tab/book@highlight.png",
+        "iconPath": "/images/tab/book.png",
+        "text": "书单"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "selectedIconPath": "/images/tab/my@highlight.png",
+        "iconPath": "/images/tab/my.png",
+        "text": "喜欢"
+      }
+    ]
+  }
+
 }
