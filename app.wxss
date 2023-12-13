@@ -4,7 +4,7 @@
   font-size:16px;
  /* overflow: hidden; */
 /* } */
-.container {
+/* .container {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -12,4 +12,4 @@
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
-}  
+}   */

@@ -9,6 +9,13 @@
       "list": [
         {
           "name": "",
+          "pathName": "components/epsoide/epsoide",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
           "pathName": "components/like/like",
           "query": "",
           "launchMode": "default",
