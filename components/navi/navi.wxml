@@ -1,7 +1,7 @@
 <!--components/navi/navi.wxml-->
 <!-- <text>components/navi/navi.wxml</text> -->
-<view class=container>
-  <image class="navi-con navi-left" bind:tap="onLeft" src="{{latest?disLeftSrc:highLeftSrc}}"/>
+<view class="container">
+  <image class="navi-con navi-left" bind:tap="onLeft" src="{{latest?disLeftSrc:highLeftSrc}}" />
   <text class="title">{{title}}</text>
   <image class="navi-icon navi-right" disable="{{!first}}" bind:tap="onRight" src="{{first?'images/triangle.dis@right.png':'images/triangle.dis@right.png'}}" />
 
