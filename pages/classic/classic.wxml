@@ -7,4 +7,5 @@
       <like-cmp bind:like="onLike" class="like" like="{{like}}" count="{{count}}"  />
     </view>
   </view>
+  <navi-cmp  class="navi" latest="{{latest}}" first="{{first}}" catch:left="onNext" catch:right="onPrevious" title="{{classic.title}}" />
 </view>

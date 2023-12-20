@@ -1,6 +1,8 @@
 {
   "usingComponents": {
+    "navi-cmp":"/components/navi/navi",
     "like-cmp":"/components/like/like",
     "epsoide-cmp":"/components/epsoide/epsoide"
+    
   }
 }
