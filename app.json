@@ -1,8 +1,7 @@
 {
   "pages": [
     "pages/classic/classic",
-    "components/like/like",
-    "components/epsoide/epsoide",
+
     "pages/book/book",
     "pages/my/my"
   ],
