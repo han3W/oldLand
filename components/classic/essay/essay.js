@@ -1,9 +1,11 @@
 // components/classic/essay/essay.js
+import {classicBehavior} from '../classic-beh'
 Component({
 
   /**
    * 组件的属性列表
    */
+  behaviors:[classicBehavior],
   properties: {
 
   },

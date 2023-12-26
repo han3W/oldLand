@@ -1,2 +1,8 @@
 <!--components/classic/movie/movie.wxml-->
-<text>components/classic/movie/movie.wxml</text>
+<!-- <text>components/classic/movie/movie.wxml</text> -->
+<view class="classic-container">
+  <image src="{{img}}" class="classic-img"></image>
+  <image class='tag' src="images/movie@tag.png" />
+  <text class="content">{{content}}</text>
+
+</view>
