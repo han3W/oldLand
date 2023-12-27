@@ -5,7 +5,8 @@
     "epsoide-cmp":"/components/epsoide/epsoide",
     "music-cmp":"/components/classic/music/music",
     "movie-cmp":"/components/classic/movie/movie",
-    "essay-cmp":"/components/classic/essay/essay"
+    "essay-cmp":"/components/classic/essay/essay",
+    "img-btn-cmp":"/components/image-button/index"
     
   }
 }

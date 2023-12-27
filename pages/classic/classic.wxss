@@ -34,3 +34,12 @@
   position: absolute;
   bottom: 40rpx;
 }
+.share-btn{
+  margin-top:28rpx;
+  margin-left:10rpx;
+}
+.share{
+  /* padding:10rpx; */
+  width:40rpx;
+  height:40rpx;
+}
