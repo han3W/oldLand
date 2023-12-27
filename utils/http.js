@@ -1,4 +1,4 @@
-import {config} from '..config.js'
+import {config} from '../config.js'
 class HTTP{
   constructor(){
     this.baseRestUrl = config.api_blink_url
