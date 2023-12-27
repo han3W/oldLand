@@ -2,7 +2,10 @@
   "usingComponents": {
     "navi-cmp":"/components/navi/navi",
     "like-cmp":"/components/like/like",
-    "epsoide-cmp":"/components/epsoide/epsoide"
+    "epsoide-cmp":"/components/epsoide/epsoide",
+    "music-cmp":"/components/classic/music/music",
+    "movie-cmp":"/components/classic/movie/movie",
+    "essay-cmp":"/components/classic/essay/essay"
     
   }
 }
