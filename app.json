@@ -1,9 +1,9 @@
 {
   "pages": [
     "pages/classic/classic",
-
     "pages/book/book",
-    "pages/my/my"
+    "pages/my/my",
+    "pages/classic-detail/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -38,5 +38,4 @@
       }
     ]
   }
-
 }
