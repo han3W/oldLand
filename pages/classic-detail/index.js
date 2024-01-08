@@ -1,61 +1,53 @@
 // pages/classic-detail/index.js
-Page({
-
-  /**
-   * 页面的初始数据
-   */
-  data: {
-
+import { ClassicModel } from '../../models/classic.js'
+import { LikeModel } from '../../models/like.js'
+let classicModel = new ClassicModel()
+let likeModel = new LikeModel()
+Component({
+properties:{},
+data:{
+  classic:null,
+  latest:true,
+  first:false,
+  like:false,
+  count:0
+},
+methods:{
+  onLoad:function(options){
+    let cid =options.cid
+    let type=options.type
+    classicModell.getById(cid,type,(data)=>{
+      this._getLikeStatus(data.id,data.type)
+      this.setData({
+        classic:data
+      })
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad(options) {
-
+  onPrevious:function(event){
+    let index = this.data.classic.index
+    classicModel.getPreious(index,(data)=>{
+      if(data){
+        this._getLikeStatus(data.id,data.type)
+        this.setData({
+          classic:data,
+          latest: classicModel.isLatest(data.index)
+        })
+      }
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady() {
-
+  onLike:function(event){
+    let like_or_cancel = event.detail.behavior
+    likeModel.like(like_or_cancel,this.data.classic.id,this.data.classic.type)
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
-  },
+  _getLikeStatus:function(cid,type){
+    likeModel.getClassicLikeStatus(cid,type,(data)=>{
+      this.setData({
+        like:data.like_status,
+        count:data.fav_nums
+      })
+    })
+  }
+},
 
   /**
    * 用户点击右上角分享
