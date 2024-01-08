@@ -3,7 +3,8 @@
     "pages/classic/classic",
     "pages/book/book",
     "pages/my/my",
-    "pages/classic-detail/index"
+    "pages/classic-detail/index",
+    "pages/detail/detail"
   ],
   "window": {
     "backgroundTextStyle": "light",

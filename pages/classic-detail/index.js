@@ -35,6 +35,22 @@ methods:{
       }
     })
   },
+  onNext:function(event){
+    let index=this.data.classic.index
+    classicModel.getNext(index,(data)=>{
+      if(data){
+        this._getLikeStatus(data.id,data.type)
+        this.setData({
+          classic:data,
+          latest:classicModel.isLatest(data.index),
+          first:classicModel.isFirst(data.index)
+        })
+      }
+      else{
+        console.log('not more classic')
+      }
+    })
+  },
   onLike:function(event){
     let like_or_cancel = event.detail.behavior
     likeModel.like(like_or_cancel,this.data.classic.id,this.data.classic.type)
