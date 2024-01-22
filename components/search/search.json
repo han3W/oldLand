@@ -1,4 +1,7 @@
 {
   "component": true,
-  "usingComponents": {}
+  "usingComponents": {
+    "tag-cmp" :"../tag/index",
+    "book-cmp":"../book/index"
+  }
 }

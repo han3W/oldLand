@@ -1,2 +1,6 @@
 <!--components/tag/index.wxml-->
-<text>components/tag/index.wxml</text>
+<!-- <text>components/tag/index.wxml</text> -->
+<view bind:tap="onTap" class="container tag-class">
+  <text>{{text}}</text>
+  <slot class="after" name="after"></slot>
+</view>
