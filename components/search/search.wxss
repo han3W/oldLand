@@ -105,7 +105,7 @@
   margin-bottom: 10px;
   /* padding-bottom: 10px; *//* margin-right:6px; */
 }
-header {
+.header {
   background-color: #ffffff;
   position:fixed;
   height: 100rpx;

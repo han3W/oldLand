@@ -18,6 +18,6 @@
   
   </view>
 </view>
-
+  <search-cmp more="{{more}}" wx:if="{{searchPanel}}" bind:cancel="onCancel" /> 
 
 </view>
